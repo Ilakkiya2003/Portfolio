@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ilakkiya P | Apex Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="logo" href="#home"><i id="mark"></i><span id="logoName"></span></a>
+      <ul id="links"></ul>
+      <div class="tools">
+        <button class="icon-btn" id="theme"></button>
+        <button class="icon-btn menu-btn" id="menu" aria-label="Open menu" aria-expanded="false">Menu</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home"><div class="wrap hero">
+  <div>
+    <p class="hello" id="hello"></p>
+    <h1>I build business apps that are <span>fast and easy to use.</span></h1>
+    <p class="role" id="role"></p>
+    <p class="intro" id="intro"></p>
+    <div class="btns"><a class="btn primary" href="#projects">See my work</a><a class="btn ghost" href="#contact">Contact me</a></div>
+    <div class="stats" id="stats"></div>
+  </div>
+  <div class="photo"><img id="avatar" alt="Profile picture" width="340" height="340"></div>
+</div></section>
+
+<section id="about" class="alt"><div class="wrap">
+  <h2>About me</h2>
+  <div class="about"><div id="bio"></div><dl class="facts" id="facts"></dl></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Technical skills</h2>
+  <div class="skills" id="skillList"></div>
+</div></section>
+
+<section id="projects" class="alt"><div class="wrap">
+  <h2>Projects</h2>
+  <div class="filters" id="filters" role="group" aria-label="Filter projects by technology"></div>
+  <div class="grid" id="projectGrid"></div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Work experience</h2>
+  <ol class="timeline" id="expList"></ol>
+</div></section>
+
+<section id="contact" class="alt"><div class="wrap">
+  <h2>Contact</h2>
+  <div class="contact">
+    <div>
+      <p class="sub">Have a project, an internship or a question? Send a message and I'll reply within two working days.</p>
+      <ul class="plist" id="contactList"></ul>
+    </div>
+    <form id="form" novalidate>
+      <div class="field"><label for="fName">Name</label><input id="fName" autocomplete="name"><div class="err" id="eName"></div></div>
+      <div class="field"><label for="fEmail">Email</label><input id="fEmail" type="email" autocomplete="email"><div class="err" id="eEmail"></div></div>
+      <div class="field"><label for="fMsg">Message</label><textarea id="fMsg"></textarea><div class="err" id="eMsg"></div></div>
+      <button class="btn primary" type="submit">Send message</button>
+      <div id="status" role="status"></div>
+    </form>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap" id="foot"></div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
